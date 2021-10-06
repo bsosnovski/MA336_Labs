@@ -3,9 +3,7 @@ title: 'Lab 1 - Part 1 Graphing'
 author: "Student Name"
 date: "10/04/2021"
 output: 
-  html_document:
-    toc: true
-    toc_float: true
+  html_document
 
 ---
 
@@ -27,3 +25,5 @@ Use the code from above to attempt to complete the tasks asked for you do for th
 Then write your answer here.
 
 Be sure to use complete sentances to write your answers. After all, this is writting assignment.
+
+
