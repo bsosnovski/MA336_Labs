@@ -1,7 +1,7 @@
 ---
 title: 'Lab 1 - Part 1 Graphing'
 author: "Student Name"
-date: "10/04/2021"
+date: "01/01/2000"
 output: 
   html_document
 
@@ -26,4 +26,8 @@ Then write your answer here.
 
 Be sure to use complete sentances to write your answers. After all, this is writting assignment.
 
+1.
+2.
+3.
+4.
 
