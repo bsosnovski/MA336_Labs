@@ -1,0 +1,38 @@
+---
+title: "Graphs"
+author: "B. Sosnovski"
+date: "09/25/2021"
+output: 
+  html_document: 
+    theme: cerulean
+---
+
+
+```{r setup, include=FALSE, warning = FALSE, message=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# WRITING ASSIGNMENT 
+
+In your own words, explain the differences among histograms, bar graphs, pie charts, time-series and Pareto charts. (2-4 paragraphs)
+
+Use the template rmd file to submit your writing assignment.
+
+# GRADING
+
+### Total: 20 points
+
+* Content (4 points)
+Student should provide relevant details and possibly some examples. Student must be thoughtful and reflective and provide an excellent understanding of the concepts in question.
+* Conventions of language and mechanics (2 points)
+   + No errors in grammar or spelling, uses complete sentences and clear speech. You are expected to use spell checker.
+   + Submissions must be done by the due dates.
+   + In the final submission, for the printed version attach this assignment page to the writing assignment. Also follows the guidelines given and send an electronic version of the assignment to Instructor.
+
+
+
+**Feel free to allow the Campus Writing Center, L-118, to guide you.
+Take a copy of the assignment with you when visiting the Writing Center.**
+
+
