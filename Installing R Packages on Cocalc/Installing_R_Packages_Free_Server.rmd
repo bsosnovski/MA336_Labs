@@ -1,0 +1,109 @@
+---
+title: "Installing R Packages (Free Server)"
+author: "B. Sosnovski"
+date: "10/12/2021"
+output: 
+  html_document: 
+    theme: cerulean
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Installing R packages from source
+
+Let’s say that you want to install the R package `summarytools` (the name of the package will change as you do different labs).
+
+Do the following steps:
+
+1. Go to your `Home` directory.
+2. Download the package file to your own computer.
+3. Upload the package file to your project in Colcalc.
+4. Create a Linux Terminal file in your project or open one that is already in your project.
+5. When the prompt appears (>), type in an upper-case letter `R` and press the Return Key. This will start up R.
+6. Type in `install.packages("summarytools")`
+
+The following will be displayed:
+
+```
+Installing package into ‘/usr/local/lib/R/site-library’
+(as ‘lib’ is unspecified)
+Warning in install.packages("summarytools") :
+  'lib = "/usr/local/lib/R/site-library"' is not writable
+Would you like to use a personal library instead? (yes/No/cancel) 
+```
+
+7)	Type `yes`.
+
+```
+The following will be display:
+Would you like to create a personal library
+‘~/R/x86_64-pc-linux-gnu-library/4.1’
+to install packages into? (yes/No/cancel)
+```
+
+8)	Type `yes` again.
+
+The following will be display:
+
+```
+Warning: unable to access index for repository https://cloud.r-project.org/src/contrib:
+ 	 cannot open URL 'https://cloud.r-project.org/src/contrib/PACKAGES'
+Warning message:
+package ‘summarytools’ is not available for this version of R
+
+A version of this package for your version of R might be available elsewhere,
+see the ideas at
+https://cran.r-project.org/doc/manuals/r-patched/R-admin.html#Installing-packages 
+> dir.create(path = Sys.getenv("R_LIBS_USER"), showWarnings = FALSE, 
+recursive = TRUE)
+> install.packages("<name of package>", lib = Sys.getenv("R_LIBS_USER"), 
+repos = "https://cran.rstudio.com/")
+	                            
+Warning: unable to access index for repository https://cran.rstudio.com/src/contrib:
+  cannot open URL 'https://cran.rstudio.com/src/contrib/PACKAGES'
+Warning message:
+package ‘<name of package>’ is not available for this version of R
+	
+A version of this package for your version of R might be available elsewhere,
+see the ideas at
+https://cran.r-project.org/doc/manuals/r-patched/R-admin.html#Installing-packages 
+>
+```
+
+9)	Now type in the command: `.libPaths()`
+
+Then the something similar to the following will be displayed:
+
+```
+[1] "/home/user/R/x86_64-pc-linux-gnu-library/4.1"
+[2] "/usr/local/lib/R/site-library"               
+[3] "/usr/lib/R/site-library"                     
+[4] "/usr/lib/R/library"                          
+>
+```
+
+**Note:** The library directory was created and appear [1]. 
+
+You can see that you have a library directory created in your Cocalc project.
+
+10)	Then enter the following command: `
+install.packages("summarytools", "/home/user/R/x86_64-pc-linux-gnulibrary/4.1", repos = NULL, type="source")
+`
+
+The following should be displayed:
+```
+* installing *binary* package ‘summarytools’ ...
+* DONE (summarytools)
+>
+```
+
+This means that the package `summarytools` is installed in your project.
+
+**Note** in the code syntax above you have 
+`install.packages("package_name", "your_personal_library_directory", repos = NULL, type="source")`
+
+You will place the `package_name` and library directory `your_personal_library_directory` in the code.
+
+Next time you install another package you will not need to create the library because it is already there (if installed in the `Home` directory of your project).
