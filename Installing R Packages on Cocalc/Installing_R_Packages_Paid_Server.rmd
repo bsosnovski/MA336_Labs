@@ -1,0 +1,90 @@
+---
+title: "Installing R Packages (Paid Server)"
+author: "B. Sosnovski"
+date: "10/12/2021"
+output: 
+  html_document: 
+    theme: cerulean
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Installing R packages with Internet Access in Your Project
+
+Let’s say that you want to install the R package `gapminder` (the name of the package will change as you do different labs).
+
+Do the following steps:
+
+1. Go to your `Home` directory.
+2. Create a Linux Terminal file in your project or open one that is already in your project.
+3. When the prompt appears (>), type in an upper-case letter `R` and press the Return Key. This will start up R.
+4. Type in `install.packages("gapminder")`
+
+The following will be displayed:
+
+```
+Installing package into ‘/usr/local/lib/R/site-library’
+(as ‘lib’ is unspecified)
+Warning in install.packages("gapminder") :
+  'lib = "/usr/local/lib/R/site-library"' is not writable
+Would you like to use a personal library instead? (yes/No/cancel) 
+```
+
+5)	Type `yes`.
+
+```
+The following will be display:
+Would you like to create a personal library
+‘~/R/x86_64-pc-linux-gnu-library/4.1’
+to install packages into? (yes/No/cancel)
+```
+
+6)	Type `yes` again.
+
+The following will be display:
+
+```
+trying URL 'https://cloud.r-project.org/src/contrib/gapminder_0.3.0.tar.gz'
+Content type 'application/x-gzip' length 2110951 bytes (2.0 MB)
+==================================================
+downloaded 2.0 MB
+
+* installing *source* package ‘gapminder’ ...
+** package ‘gapminder’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (gapminder)
+```
+
+This means that the package `gapminder` is installed in your project.
+
+7)	If you type in the command: `.libPaths()`
+
+Then the something similar to the following will be displayed:
+
+```
+[1] "/home/user/R/x86_64-pc-linux-gnu-library/4.1"
+[2] "/usr/local/lib/R/site-library"               
+[3] "/usr/lib/R/site-library"                     
+[4] "/usr/lib/R/library"                          
+>
+```
+
+You can see that you have a library directory created in your Cocalc project.
+
+**Note:** The library directory was created and appear [1].
+
+Next time you install another package you will not need to create the library because it is already there (if installed in the `Home` directory of your project).
