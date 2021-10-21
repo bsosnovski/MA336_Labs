@@ -1,0 +1,67 @@
+---
+title: 'Lab-WA 2 - Graphing Data (Part 2)'
+author: "Student Name"
+date: "01/01/2000"
+output: 
+  html_document
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning=FALSE, message=FALSE)
+```
+
+# Lab Manual Practice
+
+Copy and paste your work by following each example from the lab manual for this exercise. 
+
+Only copy and paste the necessary code blocks, not the entire lab manual. 
+
+When needed, add your text and/or extra code for your submission.
+
+# Lab Exercises and Writing Assignment
+
+The following generalization exercise and writing assignment are part of your lab 2. Complete your work in that document before the deadline.
+
+
+## Lab Exercise (60 points)
+
+Use the code from above to attempt to solve the extra things are asked to you do for this assignment. 
+
+These exercises are worth 15 points each, for a total of 60 points
+
+Your exercises are as follows:
+
+1. Make a graph plotting life expectancy by year for the two continents, using the `continent` factor. Choose any two of the following: Asia, Europe, Africa, Americas, or Oceania. Make sure you change the title so it reads correctly.
+
+2. Make a graph plotting GDP per capita by year for the United States, Canada, and France. Use the `gdpPercap` column for the GDP per capita data.
+
+3. Make a new graph plotting anything you are interested in using the gapminder data set for life expectancy. It just needs to be a plot that was  not given an example for.
+
+4. Create a histogram for life expectancy for the continent Europe. Describe what type of distribution is presented.
+
+
+
+## Writing assignment (40 points)
+
+
+Complete the writing assignment described in your R Markdown document for this lab. Answer the following questions about histograms. Be sure to use complete and understandable answers. After all, this is a writing assignment. 
+
+Below you will describe what histograms are, how to interpret them, and what they are useful for. You should answer each of these questions:
+
+The answers to each of these questions are worth 10 points each, for a total of 40 points
+
+a. What do the bars on a histogram represent and what do the heights of the bars tell you?
+b. What is on the x-axis and y-axis of a histogram
+c. What does the tallest bar on a histogram tell you?
+d. Imagine you had two histograms, one was very wide and spread out, the other was very narrow with a very tall peak. Which histogram would you expect to contain more consistent numbers (numbers that are close to each other), explain why.
+
+**Rubric**
+
+General grading. 
+
+- You will receive 0 points for missing answers (say, if you do not answer question c, then you will receive 0 out 10 points for that question)
+- You must write in complete sentences. Point form sentences will be given 0 points.
+- Completely incorrect answers will receive 0 points. For example, if you incorrectly describe what the x and y-axes refer to, then you will receive 0 points for that question.
+- If your answer is generally correct but very difficult to understand and unclear you may receive half points for the question
+
